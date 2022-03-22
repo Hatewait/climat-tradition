@@ -1,0 +1,172 @@
+.partners {
+  margin-bottom: 180px;
+  position: relative;
+}
+
+.partners__title-wrap {
+  position: relative;
+}
+
+.partners__text {
+  max-width: 840px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+
+  /* or 27px */
+
+  /* Text/Black */
+  color: #000000;
+}
+
+.partners__slider {
+  width: calc(100vw - (100vw - 1280px) / 2);
+  overflow: hidden;
+}
+
+.slider__nav_partners {
+  top: 17px;
+  bottom: auto;
+}
+
+.partners__slide {
+  /*margin: 0 20px;*/
+}
+
+.partner-card {
+  width: 400px;
+  min-height: 400px;
+  height: inherit !important;
+  /*height: 100%;*/
+  padding: 40px;
+  border: 2px solid #F6F6F6;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+}
+
+.partner-card__group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.partner-card__logo {
+  margin-right: 20px;
+}
+
+.partner-card__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.partner-card__name {
+  margin: 0 0 5px 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  /* identical to box height */
+
+  /* Text/Black */
+  color: #000000;
+}
+
+.partner-card__year {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  /* identical to box height, or 24px */
+
+  /* Text/Grey */
+  color: #828282;
+}
+
+.partner-card__descr {
+  margin: 0 0 40px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  /* or 24px */
+
+  /* Text/Grey */
+  color: #828282;
+}
+
+.partner-card__pdf-group {
+  display: flex;
+  align-items: center;
+}
+
+.partner-card__pdf {
+  margin-right: 15px;
+}
+
+.partner-card__pdf-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* Text/Black */
+  color: #000000;
+}
+
+.slider__nav_partners-mobile {
+  display: none;
+}
+
+@media (max-width: 810px) {
+  .partners {
+    margin-bottom: 100px;
+  }
+  .partners__slider {
+   /* width: calc(100vw - (100vw - 320px) / 2);*/
+    width: auto;
+    overflow: hidden;
+  }
+
+  .partner-card {
+    width: 100%;
+    padding: 40px 20px;
+    height: auto !important;
+  }
+
+  .partner-card__logo {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .partner-card__group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .partners__title {
+    margin-bottom: 40px;
+  }
+
+  .slider__nav_partners-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .slider__nav_partners-mobile .slider-button-prev {
+    margin-right: 50px;
+  }
+
+  .slider__nav_partners-desktop {
+    display: none;
+  }
+}

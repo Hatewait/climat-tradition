@@ -1,0 +1,138 @@
+.intro-product__group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.intro-product__pic {
+  width: 50%;
+}
+
+.intro-product__pic {
+  padding-left: 90px;
+}
+
+.intro-product__pic img {
+  max-width: 580px;
+  width: 100%;
+}
+
+.intro-product__pic_features img {
+  max-width: 400px;
+}
+
+.intro-product__about {
+  width: 50%;
+  padding-left: 40px;
+}
+
+.intro-product__about {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-product__title {
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+
+  /* Text/Blue */
+  color: #2F80ED;
+}
+
+.intro-product__subtitle {
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  /* Text/Grey */
+  color: #828282;
+}
+
+.intro-product__text {
+  max-width: 400px;
+  margin: 0 0 20px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+
+  /* or 27px */
+
+  /* Text/Black */
+  color: #000000;
+}
+
+.intro-product__nav {
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  /* Text/Grey */
+  color: #828282;
+}
+
+.intro-product__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-product__nav-list li {
+  flex-basis: 45%;
+  margin-bottom: 10px;
+}
+
+.intro-product__nav-list a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+
+  /* or 27px */
+
+  /* Text/Blue */
+  color: #2F80ED;
+}
+
+@media (max-width: 810px) {
+  .intro-product__group {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .intro-product__pic {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .intro-product__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 100%;
+  }
+
+  .intro-product__about {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .intro-product__nav-list li {
+    flex-basis: 100%;
+  }
+
+  .modal-product__body {
+    padding: 0 40px !important;
+  }
+}

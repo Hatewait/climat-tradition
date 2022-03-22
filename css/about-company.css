@@ -1,0 +1,226 @@
+.about-company {
+  margin-bottom: 160px;
+}
+
+.about-company__content {
+  display: flex;
+}
+
+.about-company__descr {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  padding-top: 70px;
+}
+
+.about-company__logo {
+  margin-bottom: 60px;
+  width: 345px;
+  height: 140px;
+}
+
+.about-company__text {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.about-company__read-more {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  background: transparent;
+  text-align: left;
+}
+
+.about-company__visual-text {
+  position: absolute;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  /* Text/Black */
+  color: #000000;
+}
+
+
+.about-company__visual {
+  position: relative;
+  width: 50%;
+  min-height: 440px;
+}
+
+.about-company__visual-item {
+  position: absolute;
+}
+
+.about-company__visual-item_orange {
+  top: 0;
+  left: 0;
+  width: 342px;
+  height: 301px;
+}
+
+.about-company__visual-item_green {
+  right: 30px;
+  top: 121px;
+  width: 240px;
+  height: 153px;
+}
+
+.about-company__visual-item_purple {
+  width: 272px;
+  height: 131px;
+  top: 280px;
+  left: 295px;
+}
+
+.about-company__visual-item_yellow {
+  width: 232px;
+  height: 101px;
+  bottom: 0;
+  left: 30px;
+}
+
+.about-company__visual-color {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.about-company__visual-color_orange {
+  width: 301px;
+  height: 301px;
+  top: 0;
+  left: 0;
+  background: #EB5757;
+}
+
+.about-company__visual-text_orange {
+  top: 159px;
+  left: 105px;
+}
+
+.about-company__visual-color_green {
+  width: 153px;
+  height: 153px;
+  background: #6FCF97;
+  left: 50px;
+  top: 0;
+}
+
+.about-company__visual-text_green {
+  top: 50px;
+  left: 78px;
+}
+
+.about-company__visual-color_purple {
+  width: 131px;
+  height: 131px;
+  /* Purple 2 */
+  background: #BB6BD9;
+}
+
+.about-company__visual-text_purple {
+  top: 40px;
+  left: 54px;
+}
+
+.about-company__visual-color_yellow {
+  width: 101px;
+  height: 101px;
+  /* Yellow */
+  background: #F2C94C;
+}
+
+.about-company__visual-text_yellow {
+  top: 27px;
+  left: 35px;
+}
+
+.about-company__slider {
+  display: none;
+}
+
+@media (max-width: 810px) {
+  .about-company {
+    margin-bottom: 100px;
+  }
+
+  .about-company__content {
+    flex-direction: column;
+  }
+
+  .about-company__descr {
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .about-company__logo {
+    width: 156px;
+    height: 66px;
+    margin-bottom: 50px;
+  }
+
+  .about-company__text {
+    margin-bottom: 10px;
+  }
+
+  .about-company__read-more {
+    margin-bottom: 40px;
+  }
+
+  .about-company__slider {
+    display: block;
+  }
+
+  .about-company__slide-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* Text/Black */
+    color: #000000;
+  }
+
+  .about-company__visual {
+    display: none;
+  }
+
+  .slick-initialized .slick-slide.about-company__slide {
+    width: 300px !important;
+    height: 300px;
+    margin: 0 30px 50px 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-company__slide_orange {
+    background: #EB5757;
+  }
+
+  .about-company__slide_green {
+    background: #6FCF97;
+  }
+
+  .about-company__slide_purple {
+    background: #BB6BD9;
+  }
+
+  .about-company__slide_yellow {
+    background: #F2C94C;
+  }
+
+  .about-company__arrows {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-company__arrows #prev {
+    margin-right: 30px;
+  }
+
+}

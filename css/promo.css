@@ -1,0 +1,42 @@
+.promo__content {
+  padding-top: 108px;
+  margin-bottom: 60px;
+  background: no-repeat 300px/100% url(../img/car.png);
+  min-height: 650px;
+  background-position: 6px -102px;
+}
+
+.promo__text {
+  max-width: 816px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 78px;
+
+  color: #000000;
+}
+
+.promo__text span {
+  color: #EB5757;
+}
+
+@media (max-width: 810px) {
+  .promo__content  {
+    padding-top: 20px;
+    margin-bottom: 30px;
+    background: no-repeat -50px/130% url("../img/car.png");
+    min-height: 285px;
+    background-position-x: -93px;
+    background-position-y: 41px;
+  }
+
+  .promo__text {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .promo__text span {
+    color: #2F80ED;
+  }
+}

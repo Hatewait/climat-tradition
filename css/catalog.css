@@ -1,0 +1,158 @@
+.catalog {
+  margin-bottom: 180px;
+}
+
+.catalog__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.catalog__title {
+  align-self: center;
+  margin: 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+
+  /* identical to box height */
+
+  /* Text/Black */
+  color: #000000;
+}
+
+.catalog__btn {
+  background: transparent;
+  align-self: flex-end;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.catalog__filter-list {
+  display: flex;
+}
+
+.catalog__filter-list_square {
+  margin-top: 60px;
+  margin-bottom: 65px;
+}
+
+.catalog__filter-title {
+  margin-right: 60px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* Text/Black */
+  color: #000000;
+}
+
+.catalog__filter-item {
+  padding-bottom: 5px;
+  margin-right: 60px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* Text/Black */
+  color: #000000;
+}
+
+.catalog__filter-item:last-child {
+  margin-right: 0;
+}
+
+.catalog__filter-item_active {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* Text/Blue */
+  color: #2F80ED;
+  border-bottom: 4px solid #2F80ED;;
+}
+
+.catalog__cards {
+  margin: 0 -20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__card {
+
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  border: 2px solid #f6f6f6;
+}
+
+@media (max-width: 810px) {
+  .catalog {
+    margin-bottom: 60px;
+  }
+
+  .catalog__top {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 34px;
+  }
+
+  .catalog__title {
+    margin-bottom: 10px;
+    align-self: flex-start;
+  }
+
+  .catalog__btn {
+    align-self: flex-start;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .catalog__filter-list {
+    flex-direction: column;
+  }
+
+  .catalog__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catalog__card {
+    margin-bottom: 30px;
+  }
+
+  .catalog__filter-title {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .catalog__filter-item {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 150%;
+    padding-bottom: 0;
+  }
+
+  .catalog__filter-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .catalog__filter-item_active {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: fit-content;
+  }
+
+  .catalog__filter-list_square {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

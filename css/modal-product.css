@@ -1,0 +1,42 @@
+.modal-product__content {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0;
+}
+
+.intro-product__dialog.modal-dialog {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.modal-dialog-scrollable {
+  height: calc(100% - 3.5rem);
+}
+
+.modal-dialog-scrollable .modal-content {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.modal-header.modal-product__header {
+  height: 80px;
+  position: relative;
+  border-bottom: 0;
+  border-bottom: 0;
+  padding: 0;
+}
+
+.modal-product__close {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 0;
+  top: 0;
+  background: #2F80ED;
+  border-radius: 5px;
+}
+
+.modal-product__body {
+  padding-left: 40px;
+  padding-right: 80px;
+}
