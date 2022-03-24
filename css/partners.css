@@ -37,6 +37,8 @@
 }
 
 .partner-card {
+  display: flex;
+  flex-direction: column;
   width: 400px;
   min-height: 400px;
   height: inherit !important;
@@ -104,6 +106,7 @@
 .partner-card__pdf-group {
   display: flex;
   align-items: center;
+  margin-top: auto;
 }
 
 .partner-card__pdf {
@@ -123,6 +126,19 @@
 .slider__nav_partners-mobile {
   display: none;
 }
+
+.slider__nav_partners-desktop {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__nav_partners-desktop .slider-button-prev {
+  margin-right: 50px;
+}
+
 
 @media (max-width: 810px) {
   .partners {

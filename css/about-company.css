@@ -142,6 +142,10 @@
   display: none;
 }
 
+.about-company__nav {
+  display: none;
+}
+
 @media (max-width: 810px) {
   .about-company {
     margin-bottom: 100px;
@@ -172,6 +176,13 @@
 
   .about-company__slider {
     display: block;
+    width: auto;
+    overflow-x: hidden;
+  }
+
+  .about-company__nav {
+    display: flex;
+    margin: 60px auto 0 auto;
   }
 
   .about-company__slide-text {
@@ -188,10 +199,9 @@
     display: none;
   }
 
-  .slick-initialized .slick-slide.about-company__slide {
-    width: 300px !important;
+  .about-company__slide {
+   width: 300px !important;
     height: 300px;
-    margin: 0 30px 50px 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;

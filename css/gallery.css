@@ -35,19 +35,36 @@
   min-width: 54px;
 }
 
+.gallery__nav {
+  display: none;
+}
+
 @media (max-width: 810px) {
   .gallery {
     margin-bottom: 100px;
   }
   .gallery__img {
     margin: 0;
-    height: auto !important;
+    max-width: 100%;
+    /*height: auto !important;*/
 
+  }
+
+  .gallery__slider {
+    width: auto;
+    overflow-x: hidden;
   }
 
   .gallery__photos {
     margin:  0;
+    flex-wrap: nowrap;
   }
+
+  .gallery__nav {
+    display: flex;
+    margin: 60px auto 0 auto;
+  }
+
   .gallery__link {
     display: none !important;
   }

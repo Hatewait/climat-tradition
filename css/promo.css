@@ -21,6 +21,9 @@
 }
 
 @media (max-width: 810px) {
+  .promo {
+    padding-top: 70px;
+  }
   .promo__content  {
     padding-top: 20px;
     margin-bottom: 30px;

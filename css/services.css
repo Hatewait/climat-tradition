@@ -82,6 +82,7 @@
 
 .services__slide {
   display: flex;
+  align-items: center;
 }
 
 .services__nav {

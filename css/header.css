@@ -54,6 +54,15 @@
 }
 
 @media (max-width: 810px) {
+  .header {
+    padding: 20px 0 20px 0;
+    margin-bottom: 40px;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    z-index: 100;
+  }
+
   .header__contacts {
     display: none;
   }
@@ -83,10 +92,4 @@
     max-width: 170px;
     height: 46px;
   }
-
-  .header {
-    padding: 40px 0 0 0;
-    margin-bottom: 40px;
-  }
-
 }
