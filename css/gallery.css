@@ -19,6 +19,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: fit-content;
+  align-self: center;
   margin-left: 80px;
   max-width: 270px;
   font-style: normal;
@@ -33,13 +35,16 @@
 .gallery__link svg {
   margin-right: 28px;
   min-width: 54px;
+  transition: transform 1s ease-in-out;
 }
 
-.gallery__nav {
-  display: none;
+
+.gallery__link:hover svg {
+  transform: scale(1.2);
 }
 
-@media (max-width: 810px) {
+
+@media (max-width: 1024px) {
   .gallery {
     margin-bottom: 100px;
   }
@@ -58,11 +63,6 @@
   .gallery__photos {
     margin:  0;
     flex-wrap: nowrap;
-  }
-
-  .gallery__nav {
-    display: flex;
-    margin: 60px auto 0 auto;
   }
 
   .gallery__link {

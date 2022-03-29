@@ -71,18 +71,21 @@
   justify-content: center;
 }
 
+.social-list__link:hover {
+  opacity: 0.6;
+}
+
 .social-list__link img {
   margin-right: 17px;
 }
 
 .contacts__map {
   margin-bottom: 60px;
+  background: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  object-fit: contain;
 }
 
-.contacts__map img {
-  width: 100%;
-  height: auto;
-}
 
 @media (max-width: 810px) {
   .contacts {
@@ -102,6 +105,10 @@
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 40px;
+  }
+
+  .social-list__item:last-child {
+    margin-bottom: 0;
   }
 
   .contacts__title {
@@ -126,6 +133,7 @@
   }
 
   .contacts__map {
-    margin-bottom: 40px;
+    margin: 0 -30px 40px -30px;
+
   }
 }

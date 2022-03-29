@@ -25,7 +25,6 @@
   position: relative;
   padding-left: 122px;
   max-width: 400px;
-  margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 116px;
   font-style: normal;
@@ -92,6 +91,20 @@
   min-width: 54px;
   margin-right: 28px;
   cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+
+.about-us__link svg {
+  transition: transform 1s ease-in-out;
+}
+
+.about-us__link:hover {
+  color: #2F80ED;
+}
+
+
+.about-us__link:hover svg {
+  transform: scale(1.2);
 }
 
 @media (max-width: 810px) {

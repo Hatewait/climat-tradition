@@ -48,6 +48,7 @@
 
 .services__more {
   margin-bottom: 109px;
+  width: max-content;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -76,18 +77,30 @@
   color: #FFFFFF;
 }
 
-.services__swiper {
-
+.services__btn:hover {
+  background: #2976DD;
 }
+
 
 .services__slide {
   display: flex;
   align-items: center;
 }
 
-.services__nav {
-  margin-top: 60px;
+
+@media (max-width: 1024px) {
+  .services__descr {
+    padding-right: 0;
+    padding-left: 30px;
+  }
+
+  .services__title {
+    font-size: 37px;
+    line-height: 45px;
+  }
 }
+
+
 
 @media (max-width: 810px) {
   .services {
@@ -121,7 +134,4 @@
     width: 100%;
   }
 
-  .services__nav {
-    margin: 60px auto 0 auto;
-  }
 }

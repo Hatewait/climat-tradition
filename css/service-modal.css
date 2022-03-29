@@ -1,24 +1,15 @@
-.modal-product__content {
+.service-modal__content {
   width: 100%;
   max-width: 1280px;
   padding: 0;
 }
 
-.intro-product__dialog.modal-dialog {
+.service-modal__dialog.modal-dialog {
   width: 100%;
   max-width: 1280px;
 }
 
-.modal-dialog-scrollable {
-  height: calc(100% - 3.5rem);
-}
-
-.modal-dialog-scrollable .modal-content {
-  max-height: 100%;
-  overflow: hidden;
-}
-
-.modal-header.modal-product__header {
+.modal-header.service-modal__header {
   height: 80px;
   position: relative;
   border-bottom: 0;
@@ -26,7 +17,7 @@
   padding: 0;
 }
 
-.modal-product__close {
+.service-modal__close {
   position: absolute;
   width: 80px;
   height: 80px;
@@ -36,7 +27,17 @@
   border-radius: 5px;
 }
 
-.modal-product__body {
+.service-modal__body {
   padding-left: 40px;
   padding-right: 80px;
+}
+
+.service-modal__group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.service-modal__block {
+
 }

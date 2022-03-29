@@ -111,6 +111,7 @@
   /* Text/Black */
   color: #000000;
 
+  z-index: 10;
 }
 
 .reviews__show-more svg {
@@ -171,11 +172,16 @@
   bottom: -2px;
 }
 
-.reviews__nav {
-  display: none;
+.reviews__show-more svg {
+  transition: transform 1s ease-in-out;
 }
 
-@media (max-width: 810px) {
+.reviews__show-more:hover svg {
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 1024px) {
   .reviews {
     margin-bottom: 100px;
   }
@@ -197,6 +203,7 @@
   .reviews__cards {
     width: auto;
     overflow-x: hidden;
+    margin: 0;
   }
 
   .reviews-card {
@@ -210,10 +217,7 @@
     display: none;
   }
 
-  .reviews__nav {
-    display: flex;
-    margin: 60px auto 0 auto;
-  }
+
 
   .reviews__group {
     display: flex;
