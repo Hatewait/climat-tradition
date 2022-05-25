@@ -1,12 +1,10 @@
-.intro-product__content {
-  width: 100%;
-  max-width: 1280px;
-  padding: 0;
+.intro-product {
+  background: #f6f6f6;
 }
 
-.intro-product__dialog.modal-dialog {
-  width: 100%;
-  max-width: 1280px;
+.intro-product__content {
+  padding: 80px 40px 0 40px;
+  background: #ffffff;
 }
 
 .modal-header.intro-product__header {
@@ -32,20 +30,19 @@
   padding-right: 80px;
 }
 
+.intro-product__block {
+  padding-bottom: 100px;
+}
 
 .intro-product__group {
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
 }
 
 .intro-product__pic {
   width: 50%;
 }
 
-.intro-product__pic {
-  padding-left: 90px;
-}
 
 .intro-product__pic img {
   max-width: 580px;
@@ -79,6 +76,7 @@
 }
 
 .intro-product__subtitle {
+  display: none;
   margin-bottom: 20px;
   font-family: Montserrat;
   font-style: normal;
@@ -104,6 +102,10 @@
   color: #000000;
 }
 
+.intro-product__text:last-child {
+  margin-bottom: 0;
+}
+
 .intro-product__nav {
   margin-bottom: 10px;
   font-family: Montserrat;
@@ -118,12 +120,12 @@
 .intro-product__nav-list {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 140px;
+  /*flex-wrap: wrap;
+  height: 140px;*/
 }
 
 .intro-product__nav-list li {
-  width: 45%;
+  /*width: 45%;*/
   margin-bottom: 10px;
 }
 
@@ -140,10 +142,43 @@
   color: #2F80ED;
 }
 
+.intro-product__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+
+.intro-product__action {
+  display: flex;
+}
+
+.intro-product__header {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* Text/Black */
+  color: #000000;
+}
+
+.intro-product__card-price {
+  margin-right: 63px;
+}
+
 @media (max-width: 810px) {
+  .intro-product .h-container {
+    padding: 0;
+  }
   .intro-product__group {
     flex-direction: column;
-    margin-bottom: 40px;
+  }
+
+  .intro-product__block {
+    padding-bottom: 40px;
   }
 
   .intro-product__pic {
@@ -162,7 +197,8 @@
 
   .intro-product__about {
     width: 100%;
-    padding-left: 0;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .intro-product__nav-list {
@@ -176,5 +212,46 @@
 
   .modal-product__body {
     padding: 0 40px !important;
+  }
+
+  .intro-product {
+    background: #ffffff;
+  }
+
+  .intro-product__content {
+    padding: 0;
+  }
+
+  .intro-product__details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .intro-product__details .card-price__old {
+    font-size: 20px;
+  }
+
+  .intro-product__details .card-price__current {
+    font-size: 24px;
+  }
+
+  .intro-product__details .trigger-form-btn {
+    display: flex;
+  }
+
+  .intro-product__action {
+    flex-direction: column;
+  }
+
+  .intro-product__block_last {
+    border-bottom: 1px solid #f6f6f6;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-product__pic_features img {
+    max-width: 360px;
+    margin: 0 auto;
+    display: block;
   }
 }

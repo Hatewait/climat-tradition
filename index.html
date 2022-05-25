@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/checkbox.css">
   <link rel="stylesheet" href="css/intro-product.css">
-  <link rel="stylesheet" href="css/service-modal.css">
+  <link rel="stylesheet" href="css/montage-block.css">
   <script type="text/javascript" src="/js/bootstrap/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="/js/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
@@ -44,13 +44,13 @@
 
       <div class="header__contacts">
         <a class="header__tel" href="tel:+74992167034">+7 (499) 216-70-34</a>
-        <button class="header__btn-call blue-color button" data-bs-toggle="modal" data-bs-target="#contactModal">Заказать
+        <button class="header__btn-call blue-color button" data-bs-toggle="modal" data-bs-target="#contactCall">Заказать
           обратный звонок
         </button>
       </div>
 
 
-      <button class="button blue-bg header__form-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Оставить
+      <button class="button blue-bg  header__form-button trigger-form-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Оставить
         заявку
       </button>
       <button class="button header__menu-trigger"></button>
@@ -64,25 +64,25 @@
     <div class="h-container">
       <ul class="main-nav__list list">
         <li class="main-nav__item">
-          <a href="#catalog" class="main-nav__link">Каталог</a>
+          <a href="#catalog" class="main-nav__link" data-scrolling-to="true">Каталог</a>
         </li>
         <li class="main-nav__item">
-          <a href="#services" class="main-nav__link">Услуги</a>
+          <a href="#services" class="main-nav__link" data-scrolling-to="true">Услуги</a>
         </li>
         <li class="main-nav__item">
-          <a href="#about-us" class="main-nav__link">О нас</a>
+          <a href="#about-us" class="main-nav__link" data-scrolling-to="true">О нас</a>
         </li>
         <li class="main-nav__item">
-          <a href="#reviews" class="main-nav__link">Отзывы</a>
+          <a href="#reviews" class="main-nav__link" data-scrolling-to="true">Отзывы</a>
         </li>
         <li class="main-nav__item">
-          <a href="#partners" class="main-nav__link">Сертификаты</a>
+          <a href="#partners" class="main-nav__link" data-scrolling-to="true">Сертификаты</a>
         </li>
         <li class="main-nav__item">
-          <a href="#faq" class="main-nav__link">Вопрос-ответ</a>
+          <a href="#faq" class="main-nav__link" data-scrolling-to="true">Вопрос-ответ</a>
         </li>
         <li class="main-nav__item">
-          <a href="#contacts" class="main-nav__link">Контакты</a>
+          <a href="#contacts" class="main-nav__link" data-scrolling-to="true">Контакты</a>
         </li>
       </ul>
     </div>
@@ -139,14 +139,13 @@
 
       <div class="catalog__cards">
         <article class="catalog__card card">
-          <h2 class="card__title">KVS-SP07HT.1</h2>
+          <a href="intro-product.html" class="card__title">KVS-SP07HT.1</a>
           <p class="card__subtitle">Кондиционер стандартный</p>
           <div class="card__content">
             <div class="card__group">
               <img class="card__img" src="img/product-1.jpg" alt="">
               <div class="card__all-chars">
-                <button class="button card__all-chars-text blue-color link-hover" data-bs-toggle="modal"
-                        data-bs-target="#modalProduct1">
+                <button class="button card__all-chars-text blue-color link-hover">
                   <svg width="15"
                        height="13"
                        viewBox="0 0 15 13"
@@ -184,7 +183,7 @@
           </div>
         </article>
         <article class="catalog__card card">
-          <h2 class="card__title">HISENSE AS-07HR4SYCDC5</h2>
+          <a href="" class="card__title">HISENSE AS-07HR4SYCDC5</a>
           <p class="card__subtitle">Кондиционер стандартный</p>
           <div class="card__content">
             <div class="card__group">
@@ -230,7 +229,7 @@
         </article>
 
         <article class="catalog__card card">
-          <h2 class="card__title">ROYAL CLIMA RC-GL22HN</h2>
+          <a href="" class="card__title">ROYAL CLIMA RC-GL22HN</a>
           <p class="card__subtitle">Кондиционер стандартный</p>
           <div class="card__content">
             <div class="card__group">
@@ -276,7 +275,7 @@
         </article>
 
         <article class="catalog__card card">
-          <h2 class="card__title">MITSUBISHI ELECTRIC MS-GF20VA</h2>
+          <a href="" class="card__title">MITSUBISHI ELECTRIC MS-GF20VA</a>
           <p class="card__subtitle">Кондиционер стандартный</p>
           <div class="card__content">
             <div class="card__group">
@@ -321,7 +320,7 @@
         </article>
 
         <article class="catalog__card card">
-          <h2 class="card__title">HAIER HSU-07HPL03/R3</h2>
+          <a href="" class="card__title">HAIER HSU-07HPL03/R3</a>
           <p class="card__subtitle">Кондиционер стандартный</p>
           <div class="card__content">
             <div class="card__group">
@@ -365,7 +364,7 @@
 
         </article>
         <article class="catalog__card card">
-          <h2 class="card__title">ELECTROLUX EACS-07HF/N3</h2>
+          <a href="" class="card__title">ELECTROLUX EACS-07HF/N3</a>
           <p class="card__subtitle">Кондиционер стандартный</p>
           <div class="card__content">
             <div class="card__group">
@@ -409,7 +408,7 @@
 
         </article>
         <article class="catalog__card card">
-          <h2 class="card__title">BALLU BSO-07HN1</h2>
+          <a href="" class="card__title">BALLU BSO-07HN1</a>
           <p class="card__subtitle">Кондиционер стандартный</p>
           <div class="card__content">
             <div class="card__group">
@@ -453,7 +452,7 @@
 
         </article>
         <article class="catalog__card card">
-          <h2 class="card__title">ENERGOLUX SAS07BD1-A/SAU07BD1-A</h2>
+          <a href="" class="card__title">ENERGOLUX SAS07BD1-A/SAU07BD1-A</a>
           <p class="card__subtitle">Кондиционер стандартный</p>
           <div class="card__content">
             <div class="card__group">
@@ -497,7 +496,7 @@
 
         </article>
         <article class="catalog__card card">
-          <h2 class="card__title">IGC RAS-07AX / RAC-07AX</h2>
+          <a href="" class="card__title">IGC RAS-07AX / RAC-07AX</a>
           <p class="card__subtitle">Кондиционер стандартный</p>
           <div class="card__content">
             <div class="card__group">
@@ -541,7 +540,7 @@
 
         </article>
         <article class="catalog__card card">
-          <h2 class="card__title">PIONEER KFR20MW/KOR20MW</h2>
+          <a href="" class="card__title">PIONEER KFR20MW/KOR20MW</a>
           <p class="card__subtitle">Кондиционер стандартный</p>
           <div class="card__content">
             <div class="card__group">
@@ -585,7 +584,7 @@
 
         </article>
         <article class="catalog__card card">
-          <h2 class="card__title">LESSAR LS-H07KPA2C/LU-H07KPA2C</h2>
+          <a href="" class="card__title">LESSAR LS-H07KPA2C/LU-H07KPA2C</a>
           <p class="card__subtitle">Кондиционер стандартный</p>
           <div class="card__content">
             <div class="card__group">
@@ -629,7 +628,7 @@
 
         </article>
         <article class="catalog__card card">
-          <h2 class="card__title">AUX ASW-H07A4/FP-R1 AS-H07A4/FP-R1</h2>
+          <a href="" class="card__title">AUX ASW-H07A4/FP-R1 AS-H07A4/FP-R1</a>
           <p class="card__subtitle">Кондиционер стандартный</p>
           <div class="card__content">
             <div class="card__group">
@@ -690,9 +689,9 @@
 
             <div class="services__descr">
               <p class="services__title">Стандартный монтаж кондиционера</p>
-              <span class="services__price blue-color">от 5000 ₽</span>
+              <span class="services__price blue-color">от 12 000 ₽</span>
               <p class="services__text">Что входит в монтаж? Как происходит монтаж? И другие ответы на интересующие вас вопросы</p>
-              <button  data-bs-toggle="modal" data-bs-target="#modalMontaj" class="button blue-color services__more link-hover">Читать подробнее об услуге</button>
+              <a href="montage.html" class="button blue-color services__more link-hover">Читать подробнее об услуге</a>
               <button class="button blue-bg services__btn" data-bs-toggle="modal" data-bs-target="#contactModal">Заказать услугу</button>
 
               <div class="swiper-nav swiper-nav_services">
@@ -710,10 +709,10 @@
             <img src="/img/montaj.jpg" alt="">
 
             <div class="services__descr">
-              <p class="services__title">Стандартный монтаж кондиционера</p>
-              <span class="services__price blue-color">от 5000 ₽</span>
+              <p class="services__title">Монтаж в два этапа</p>
+              <span class="services__price blue-color">от 10 000 ₽</span>
               <p class="services__text">Что входит в монтаж? Как происходит монтаж? И другие ответы на интересующие вас вопросы</p>
-              <button class="button blue-color services__more link-hover">Читать подробнее об услуге</button>
+              <a href="montage-2.html" class="button blue-color services__more link-hover">Читать подробнее об услуге</a>
               <button class="button blue-bg services__btn" data-bs-toggle="modal" data-bs-target="#contactModal">Заказать услугу</button>
               <div class="swiper-nav swiper-nav_services">
                 <div class="swiper-nav__prev swiper-nav__prev_services"><svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -727,27 +726,7 @@
             </div>
 
           </div>
-          <div class="swiper-slide services__slide">
-            <img src="/img/montaj.jpg" alt="">
 
-            <div class="services__descr">
-              <p class="services__title">Стандартный монтаж кондиционера</p>
-              <span class="services__price blue-color">от 5000 ₽</span>
-              <p class="services__text">Что входит в монтаж? Как происходит монтаж? И другие ответы на интересующие вас вопросы</p>
-              <button class="button blue-color services__more link-hover">Читать подробнее об услуге</button>
-              <button class="button blue-bg services__btn" data-bs-toggle="modal" data-bs-target="#contactModal">Заказать услугу</button>
-
-              <div class="swiper-nav swiper-nav_services">
-                <div class="swiper-nav__prev swiper-nav__prev_services"><svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0381 0.418314C12.5027 0.893 12.5027 1.65992 12.0349 2.13138L6.72607 7.49661L6.6035 7.60499C6.13467 7.96613 5.46554 7.92851 5.0397 7.49338C4.80743 7.25604 4.69129 6.94766 4.69129 6.63927C4.69129 6.32766 4.80743 6.01766 5.04288 5.78032L10.3502 0.415085L10.4728 0.307076C10.9418 -0.0528277 11.6123 -0.0153336 12.0381 0.418314ZM25.5814 9.79827C26.1695 9.87303 26.625 10.3827 26.625 10.9998C26.625 11.6682 26.0905 12.2107 25.4318 12.2107H4.45727L12.0348 19.8686L12.142 19.9923C12.4993 20.4659 12.4638 21.1466 12.038 21.5817C11.5734 22.0548 10.8177 22.0564 10.3516 21.5849L0.726589 11.8571L0.620449 11.7353C0.458963 11.5223 0.375 11.2621 0.375 10.9998C0.375 10.8431 0.405226 10.6865 0.465681 10.538C0.650227 10.0843 1.08455 9.78883 1.56818 9.78883H25.4318L25.5814 9.79827Z" fill="#828282"/>
-                </svg></div>
-                <div class="swiper-nav__next swiper-nav__next_services"><svg width="54" height="44" viewBox="0 0 54 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M29.9238 0.836629C28.9947 1.786 28.9947 3.31985 29.9301 4.26276L40.5479 14.9932L40.793 15.21C41.7307 15.9323 43.0689 15.857 43.9206 14.9868C44.3851 14.5121 44.6174 13.8953 44.6174 13.2785C44.6174 12.6553 44.3851 12.0353 43.9142 11.5606L33.2997 0.83017L33.0545 0.614152C32.1164 -0.105655 30.7754 -0.0306673 29.9238 0.836629ZM2.83716 19.5965C1.66094 19.7461 0.75 20.7655 0.75 21.9995C0.75 23.3364 1.81909 24.4214 3.13636 24.4214H45.0855L29.9305 39.7372L29.7161 39.9846C29.0015 40.9317 29.0724 42.2931 29.9241 43.1634C30.8532 44.1095 32.3645 44.1127 33.2968 43.1698L52.5468 23.7142L52.7591 23.4706C53.0821 23.0445 53.25 22.5243 53.25 21.9995C53.25 21.6863 53.1895 21.3731 53.0686 21.076C52.6995 20.1686 51.8309 19.5777 50.8636 19.5777H3.13636L2.83716 19.5965Z" fill="#2F80ED"/>
-                </svg>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div class="swiper-pagination"></div>
@@ -1661,6 +1640,7 @@
   </div>
 </footer>
 
+<!-- модалка оставить заявку -->
 <div data-modal="" class="modal fade modal-contact"
      id="contactModal"
      tabindex="-1"
@@ -1681,7 +1661,7 @@
 
           <div class="form-action__group">
             <label class="form-action__label" for="agreement">
-              <input type="checkbox" class="form-action__agreement" id="agreement">
+              <input type="checkbox" checked class="form-action__agreement" id="agreement">
               Согласен на обработку
               <a class="form-action__link" href="">персональных данных</a>
 
@@ -1696,324 +1676,40 @@
 </div>
 
 
-<!-- Модальное окно по клику на характеристики на карточке продукта-->
-<div class="modal fade intro-product"
-     id="modalProduct1"
+
+<!-- модалка с обратным звонком -->
+<div data-modal="" class="modal fade modal-contact modal-contact_call"
+     id="contactCall"
      tabindex="-1"
-     aria-labelledby="modalProductLabel"
+     aria-labelledby="contactModalLabel"
      aria-hidden="true">
-  <div class="intro-product__dialog modal-dialog modal-dialog-scrollable">
-    <div class="modal-content  intro-product__content">
-      <div class="modal-header intro-product__header">
-        <button type="button"
-                class="btn-close close intro-product__close"
-                data-bs-dismiss="modal"
+  <div class="modal-dialog">
+    <div class="modal-content modal-contact__content">
+      <div class="modal-header modal-contact__header">
+        <button type="button" class="btn-close close modal-contact__close" data-bs-dismiss="modal"
                 aria-label="Закрыть"></button>
       </div>
-      <div class="modal-body intro-product__body">
-        <section class="intro-product__group">
-          <div class="intro-product__pic">
-            <img src="/img/intro-modal/hisense-07/view-hisense-07.jpg" alt="">
+      <div class="modal-body modal-contact__body">
+        <h2 class="modal-contact__title">Обратный звонок</h2>
+        <p class="modal-contact__text">Наш консультант перезвонит вам и поможет выбрать подходящий продукт</p>
+        <form class="modal__form form-action" action="">
+          <input class="form-action__input" type="tel" name="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
+
+          <div class="form-action__group">
+            <label class="form-action__label" for="agreement2">
+              <input type="checkbox" checked class="form-action__agreement" id="agreement2">
+              Согласен на обработку
+              <a class="form-action__link" href="">персональных данных</a>
+
+            </label>
           </div>
 
-          <div class="intro-product__about">
-            <h4 class="intro-product__title">HISENSE <br> AS-07HR4SYCDC5</h4>
-            <span class="intro-product__subtitle">Кондиционер стандартный</span>
-            <p class="intro-product__text">
-              Настенная сплит-система, предназначенная для создания и стабильного поддержания комфортной температуры.
-            </p>
-
-            <span class="intro-product__nav">
-            Навигация:
-          </span>
-
-            <ul class="intro-product__nav-list list">
-              <li><a href="#control">1. Управление</a></li>
-              <li><a href="#vent">2. Вентилятор</a></li>
-              <li><a href="#display">3. Дисплей</a></li>
-              <li><a href="#filters">4. Фильтры</a></li>
-              <li><a href="#features">5. Особенности</a></li>
-
-
-
-            </ul>
-          </div>
-        </section>
-
-        <section id="control" class="intro-product__block">
-          <div class="intro-product__group">
-            <div class="intro-product__pic">
-              <img src="/img/intro-modal/hisense-07/control-hisense-07.jpg" alt="">
-            </div>
-
-            <div class="intro-product__about">
-              <h4 class="intro-product__title">Управление</h4>
-              <span class="intro-product__subtitle">Заботится о вас</span>
-              <p class="intro-product__text">
-                Серия NEO Classic A оснащена полностью автоматическими жалюзи 4D AUTO Air, что дает возможность
-                регулировать распределение воздуха полностью по вашему желанию с помощью пульта дистанционного
-                управления.
-              </p>
-              <p class="intro-product__text">
-
-                Раньше эта функция была доступна только у моделей бизнес класса.
-              </p>
-
-            </div>
-
-          </div>
-        </section>
-
-        <section id="vent" class="intro-product__block">
-          <div class="intro-product__group">
-            <div class="intro-product__pic">
-              <img src="/img/intro-modal/hisense-07/vent-hisense-07.jpg" alt="">
-            </div>
-
-            <div class="intro-product__about">
-              <h4 class="intro-product__title">Вентилятор</h4>
-              <span class="intro-product__subtitle">Заботится о вас</span>
-              <p class="intro-product__text">
-                Мультискоростной вентилятор дает возможность гибкой настройки скорости воздуха - от слабого дуновения до
-                мощного потока, способного за считанные минуты охладить или согреть помещение.  
-              </p>
-              <p class="intro-product__text">
-                Все модели серии NEO Classic A оснащены 5-ти скоростным вентилятором внутреннего блока и функцией утечки
-                хладагента.
-              </p>
-
-            </div>
-
-          </div>
-        </section>
-        <section id="display" class="intro-product__block">
-          <div class="intro-product__group">
-            <div class="intro-product__pic">
-              <img src="/img/intro-modal/hisense-07/display-hisense-07.jpg" alt="">
-            </div>
-
-            <div class="intro-product__about">
-              <h4 class="intro-product__title">Дисплей</h4>
-              <span class="intro-product__subtitle">Заботится о вас</span>
-              <p class="intro-product__text">
-                Полнофункциональный дисплей скрыт за светопрозрачной передней панелью, что делает эксплуатацию очень
-                удобной.
-              </p>
-              <p class="intro-product__text">
-
-                Индикация утечки хладагента появляется в виде кода ошибки на дисплее внутреннего блока, помогая вовремя
-                обнаружить проблему и предотвратить выход сплит-системы из строя.
-              </p>
-
-            </div>
-
-          </div>
-        </section>
-        <section id="filters" class="intro-product__block">
-          <div class="intro-product__group">
-            <div class="intro-product__pic">
-              <img src="/img/intro-modal/hisense-07/filters-hisense-07.jpg" alt="">
-            </div>
-
-            <div class="intro-product__about">
-              <h4 class="intro-product__title">Фильтры</h4>
-              <span class="intro-product__subtitle">Заботится о вас</span>
-              <p class="intro-product__text">
-                Что касается очистки воздуха, все модели оснащены обновленным фильтром высокого класса очистки ULTRA Hi
-                Density фильтр, который удаляет более 90% пыли и других частиц из воздуха в помещении.
-              </p>
-              <p class="intro-product__text">
-                Дополнительно установлены формальдегидный и угольный фильтры, которые удаляют из воздуха вредные
-                органические вещества и неприятные запахи.
-              </p>
-
-            </div>
-
-          </div>
-        </section>
-        <section id="features" class="intro-product__block">
-          <div class="intro-product__group">
-            <div class="intro-product__pic intro-product__pic_features">
-              <img src="/img/intro-modal/hisense-07/feat.png" alt="">
-            </div>
-
-            <div class="intro-product__about">
-              <h4 class="intro-product__title">Особенности</h4>
-              <span class="intro-product__subtitle">Заботится о вас</span>
-              <p class="intro-product__text">
-                Серия NEO Classic A имеет энергоэффективность класса А, функцию I Feel (Я ощущаю), что позволяет
-                контролировать температуру непосредственно рядом с пользователем, а также еще множество особенностей,
-                наряду с традиционными функциями самоочистки, авторестарта и самодиагностики.
-              </p>
-
-            </div>
-
-          </div>
-        </section>
+          <button type="submit" class="form-action__button button">Отправить</button>
+        </form>
       </div>
     </div>
   </div>
 </div>
-
-<!-- Модальное окно по клику - на читать подробнее о монтаже-->
-
-<!--<div class="modal fade service-modal service-modal_montaj"
-     id="modalMontaj"
-     tabindex="-1"
-     aria-labelledby="modalProductLabel"
-     aria-hidden="true">
-  <div class="service-modal__dialog modal-dialog modal-dialog-scrollable">
-    <div class="modal-content  service-modal__content">
-      <div class="modal-header service-modal__header">
-        <button type="button"
-                class="btn-close close service-modal__content__close"
-                data-bs-dismiss="modal"
-                aria-label="Закрыть"></button>
-      </div>
-      <div class="modal-body service-modal__body">
-        <section class="service-modal__group">
-          <div class="intro-product__pic">
-            <img src="/img/service-montaj/m1.jpg" alt="">
-          </div>
-
-          <div class="intro-product__about">
-            <h4 class="intro-product__title">HISENSE <br> AS-07HR4SYCDC5</h4>
-            <span class="intro-product__subtitle">Кондиционер стандартный</span>
-            <p class="intro-product__text">
-              Настенная сплит-система, предназначенная для создания и стабильного поддержания комфортной температуры.
-            </p>
-
-            <span class="intro-product__nav">
-            Навигация:
-          </span>
-
-            <ul class="intro-product__nav-list list">
-              <li><a href="#control">1. Управление</a></li>
-              <li><a href="#vent">2. Вентилятор</a></li>
-              <li><a href="#display">3. Дисплей</a></li>
-              <li><a href="#filters">4. Фильтры</a></li>
-              <li><a href="#features">5. Особенности</a></li>
-
-
-
-            </ul>
-          </div>
-        </section>
-
-        <section id="control" class="service-modal__block">
-          <div class="service-modal__group">
-            <div class="intro-product__pic">
-              <img src="/img/service-montaj/m2.jpg" alt="">
-            </div>
-
-            <div class="intro-product__about">
-              <h4 class="intro-product__title">Управление</h4>
-              <span class="intro-product__subtitle">Заботится о вас</span>
-              <p class="intro-product__text">
-                Серия NEO Classic A оснащена полностью автоматическими жалюзи 4D AUTO Air, что дает возможность
-                регулировать распределение воздуха полностью по вашему желанию с помощью пульта дистанционного
-                управления.
-              </p>
-              <p class="intro-product__text">
-
-                Раньше эта функция была доступна только у моделей бизнес класса.
-              </p>
-
-            </div>
-
-          </div>
-        </section>
-
-        <section id="vent" class="service-modal__block">
-          <div class="service-modal__group">
-            <div class="intro-product__pic">
-              <img src="/img/service-montaj/m3.jpg" alt="">
-            </div>
-
-            <div class="intro-product__about">
-              <h4 class="intro-product__title">Вентилятор</h4>
-              <span class="intro-product__subtitle">Заботится о вас</span>
-              <p class="intro-product__text">
-                Мультискоростной вентилятор дает возможность гибкой настройки скорости воздуха - от слабого дуновения до
-                мощного потока, способного за считанные минуты охладить или согреть помещение.  
-              </p>
-              <p class="intro-product__text">
-                Все модели серии NEO Classic A оснащены 5-ти скоростным вентилятором внутреннего блока и функцией утечки
-                хладагента.
-              </p>
-
-            </div>
-
-          </div>
-        </section>
-        <section id="display" class="service-modal__block">
-          <div class="service-modal__group">
-            <div class="intro-product__pic">
-              <img src="/img/service-montaj/m4.jpg" alt="">
-            </div>
-
-            <div class="intro-product__about">
-              <h4 class="intro-product__title">Дисплей</h4>
-              <span class="intro-product__subtitle">Заботится о вас</span>
-              <p class="intro-product__text">
-                Полнофункциональный дисплей скрыт за светопрозрачной передней панелью, что делает эксплуатацию очень
-                удобной.
-              </p>
-              <p class="intro-product__text">
-
-                Индикация утечки хладагента появляется в виде кода ошибки на дисплее внутреннего блока, помогая вовремя
-                обнаружить проблему и предотвратить выход сплит-системы из строя.
-              </p>
-
-            </div>
-
-          </div>
-        </section>
-        <section id="filters" class="service-modal__block">
-          <div class="service-modal__group">
-            <div class="intro-product__pic">
-              <img src="/img/service-montaj/m5.jpg" alt="">
-            </div>
-
-            <div class="intro-product__about">
-              <h4 class="intro-product__title">Фильтры</h4>
-              <span class="intro-product__subtitle">Заботится о вас</span>
-              <p class="intro-product__text">
-                Что касается очистки воздуха, все модели оснащены обновленным фильтром высокого класса очистки ULTRA Hi
-                Density фильтр, который удаляет более 90% пыли и других частиц из воздуха в помещении.
-              </p>
-              <p class="intro-product__text">
-                Дополнительно установлены формальдегидный и угольный фильтры, которые удаляют из воздуха вредные
-                органические вещества и неприятные запахи.
-              </p>
-
-            </div>
-
-          </div>
-        </section>
-        <section id="features" class="service-modal__block">
-          <div class="service-modal__group">
-            <div class="intro-product__pic intro-product__pic_features">
-              <img src="/img/service-montaj/m6.jpg" alt="">
-            </div>
-
-            <div class="intro-product__about">
-              <h4 class="intro-product__title">Особенности</h4>
-              <span class="intro-product__subtitle">Заботится о вас</span>
-              <p class="intro-product__text">
-                Серия NEO Classic A имеет энергоэффективность класса А, функцию I Feel (Я ощущаю), что позволяет
-                контролировать температуру непосредственно рядом с пользователем, а также еще множество особенностей,
-                наряду с традиционными функциями самоочистки, авторестарта и самодиагностики.
-              </p>
-
-            </div>
-
-          </div>
-        </section>
-      </div>
-    </div>
-  </div>
-</div>-->
 
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/sliders.js"></script>

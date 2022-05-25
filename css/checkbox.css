@@ -7,6 +7,8 @@
 .form-action__agreement[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  width: 0;
+  height: 0;
 }
 
 .form-action__label {
@@ -45,7 +47,7 @@
   content: "";
   position: absolute;
   left: -49px;
-  top: 54px;
+  top: 12px;
   z-index: 1;
   width: 16px;
   height: 20px;
@@ -65,7 +67,7 @@
 .form-action__agreement:after {
   content: "";
   position: absolute;
-  top: 44px;
+  top: 0;
   left: -60px;
   width: 40px;
   height: 40px;

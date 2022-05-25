@@ -3,6 +3,15 @@
   margin-bottom: 18px;
 }
 
+.header__logo-link {
+  display: block;
+  text-decoration: none;
+}
+
+.header__logo-link:hover {
+  opacity: 0.6;
+}
+
 .header__content {
   display: flex;
   align-items: center;
@@ -38,7 +47,7 @@
 }
 
 
-.header__form-btn {
+.trigger-form-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +66,7 @@
   display: none;
 }
 
-.header__form-btn:hover {
+.trigger-form-btn:hover {
   background: #2976DD;
 }
 
@@ -69,13 +78,14 @@
     background: #fff;
     width: 100%;
     z-index: 100;
+    top: 0;
   }
 
   .header__contacts {
     display: none;
   }
 
-  .header__form-btn {
+  .header__form-button {
     display: none;
   }
 

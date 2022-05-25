@@ -1,0 +1,55 @@
+.page-breadcrumbs {
+  padding: 40px 0;
+  background: #f6f6f6;
+}
+
+.page-breadcrumbs__list {
+  display: flex;
+  list-style: none;
+}
+
+
+.page-breadcrumbs__link {
+  position: relative;
+  padding-right: 34px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* identical to box height */
+
+  /* Color/Text */
+  color: #000000;
+}
+
+.page-breadcrumbs__link:not(.page-breadcrumbs__link_current)::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icons/angle.svg");
+  background-repeat: no-repeat;
+  top: 3px;
+  right: 7px;
+  width: 14px;
+  height: 17px;
+}
+
+
+@media (max-width: 810px) {
+  .page-breadcrumbs {
+    margin-top: 85px;
+    padding: 20px 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .page-breadcrumbs__link {
+    max-width: 197px;
+    display: inline flow-root list-item;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

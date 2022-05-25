@@ -1,21 +1,35 @@
 "use strict";
 
 // плавный скролл по якорю
-const anchors = document.querySelectorAll('.main-nav__link')
+if (window.matchMedia("(min-width: 811px)").matches) {
+  const anchors = document.querySelectorAll('[data-scrolling-to="true"]');//на что нажимаем
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+  if (anchors) {
+    for (let anchor of anchors) {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-    const blockID = anchor.getAttribute('href').substr(1)
+        //без необходимости учитывания липкого хедера
+        //const blockID = anchor.getAttribute('href').substr(1);
+        //document.getElementById(blockID).scrollIntoView({
+        //behavior: 'smooth',
+        //block: 'start'
+        //});
 
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
+        //если необходимо учитывать липкий хэддер
+        const heightHeader = document.querySelector('.header').clientHeight;
+        const blockID = anchor.getAttribute('href').substr(1);
+        const topOfNode = document.getElementById(blockID);
+        topOfNode.scrollIntoView(true);
+        const scrolledY = window.scrollY;
+        if (scrolledY) {
+          window.scrollTo({top: (scrolledY - heightHeader), behavior: "smooth"});
+        }
+      });
+    }
+  }
+
 }
-
 
 
 // добавляет активный класс на меню с якорями
@@ -34,20 +48,21 @@ if (selectionLinks !== null) {
 }
 
 // menu burger
-$(document).ready(function(){
+$(document).ready(function () {
 
   $('.header__menu-trigger').click(function () {
     $('.main-nav').slideToggle();
   });
-  $(window).resize(function(){
+  $(window).resize(function () {
     if ($(window).width() > 810) {
       $('.header__menu-trigger').removeAttr('style');
-    };
+    }
+    ;
   });
 });
 
 if (window.matchMedia("(max-width: 810px)").matches) {
-  const menuLink =  document.querySelectorAll('.main-nav__item');
+  const menuLink = document.querySelectorAll('.main-nav__item');
   const closeNav = document.querySelector('.main-nav__close');
 
   if (closeNav) {
@@ -66,7 +81,6 @@ if (window.matchMedia("(max-width: 810px)").matches) {
 }
 
 
-
 if (window.matchMedia("(min-width: 811px)").matches) {
   let sections = $('section.scroll-block'),
       nav = $('.main-nav'),
@@ -74,14 +88,14 @@ if (window.matchMedia("(min-width: 811px)").matches) {
   $(window).on('scroll', function () {
     $('.main-nav__link').removeClass('main-nav__link_active');
     let cur_pos = $(this).scrollTop();
-    sections.each(function() {
+    sections.each(function () {
       let top = $(this).offset().top - nav_height - 180,
           bottom = top + $(this).outerHeight();
       if (cur_pos >= top && cur_pos <= bottom) {
         nav.find('a').removeClass('main-nav__link_active');
         sections.removeClass('scrolling');
         $(this).addClass('scrolling');
-        nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('main-nav__link_active');
+        nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('main-nav__link_active');
       }
     });
   });
@@ -94,3 +108,4 @@ if (window.matchMedia("(min-width: 811px)").matches) {
     return false;
   });
 }
+

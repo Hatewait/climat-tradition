@@ -1,0 +1,146 @@
+.montage-block {
+  padding-bottom: 100px;
+}
+.montage-block__steps {
+
+  background: #ffffff;
+}
+
+.montage-block__group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.montage-block__about {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.montage-block__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  max-width: 540px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+
+  /* Text/Black */
+  color: #000000;
+}
+
+.montage-block__price {
+  margin-bottom: 40px;
+  display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* Text/Blue */
+  color: #2F80ED;
+}
+
+.montage-block__button {
+  max-width: 250px;
+  margin-bottom: 80px;
+}
+
+.montage-block__pic img {
+  min-width: 620px;
+}
+
+.montage-block__step-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+
+  /* Text/Blue */
+  color: #2F80ED;
+}
+
+.montage-block__step-descr {
+  margin-top: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+
+  /* identical to box height, or 27px */
+
+  /* Text/Black */
+  color: #000000;
+}
+
+.montage-block__about ul li {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+
+  /* identical to box height, or 27px */
+
+  /* Text/Black */
+  color: #000000;
+}
+
+
+
+@media (max-width: 810px) {
+  .montage-block .h-container {
+    padding: 0;
+  }
+
+  .montage-block {
+    padding-bottom: 0;
+  }
+
+  .montage-block__group {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  .montage-block__step_last {
+    border-bottom: 1px solid #f6f6f6;
+  }
+
+  .montage-block__pic {
+    margin-bottom: 20px;
+  }
+
+  .montage-block__title {
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .montage-block__button {
+    margin-bottom: 40px;
+  }
+
+  .montage-block__pic img {
+    min-width: 100%;
+  }
+
+  .montage-block__step-title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .montage-block__step-descr {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}

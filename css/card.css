@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   max-width: calc(50% - 40px);
   width: 100%;
   min-height: 434px;
@@ -16,6 +17,17 @@
   /* Text/Blue */
   color: #2F80ED;
   text-align: left;
+  z-index: 7;
+}
+
+.card__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .card__subtitle {
@@ -107,6 +119,7 @@
   /* Text/White */
   color: #FFFFFF;
   transition: transform 0.25s;
+  z-index: 9;
 }
 
 .card__btn:hover {
