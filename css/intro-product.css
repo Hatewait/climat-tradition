@@ -125,13 +125,16 @@
 .intro-product__nav-list {
   display: flex;
   flex-direction: column;
-  max-width: 270px;
-  width: 100%;
-  margin-right: 40px;
+
   /*flex-wrap: wrap;
   height: 140px;*/
 }
 
+.intro-product__nav-list-wrap .intro-product__nav-list {
+  max-width: 270px;
+  width: 100%;
+  margin-right: 40px;
+}
 
 
 .intro-product__nav-list li {
