@@ -252,10 +252,10 @@
      tabindex="-1"
      aria-labelledby="contactModalLabel"
      aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content modal-contact__content">
       <div class="modal-header modal-contact__header">
-        <button type="button" class="btn-close close modal-contact__close" data-bs-dismiss="modal"
+        <button type="button" class="btn-close close modal-contact__close modal-contact__close_desktop" data-bs-dismiss="modal"
                 aria-label="Закрыть"></button>
       </div>
       <div class="modal-body modal-contact__body">
@@ -267,7 +267,7 @@
 
           <div class="form-action__group">
             <label class="form-action__label" for="agreement">
-              <input type="checkbox" class="form-action__agreement" id="agreement">
+              <input type="checkbox" checked class="form-action__agreement" id="agreement">
               Согласен на обработку
               <a class="form-action__link" href="">персональных данных</a>
 
@@ -275,10 +275,14 @@
           </div>
 
           <button type="submit" class="form-action__button button">Отправить</button>
+
+          <button type="button" class="btn-close close modal-contact__close modal-contact__close_mobile" data-bs-dismiss="modal"
+                  aria-label="Закрыть">Закрыть</button>
         </form>
       </div>
     </div>
   </div>
 </div>
+
 </body>
 </html>

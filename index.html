@@ -43,7 +43,17 @@
       <img class="header__logo main-logo" src="img/main-logo.svg" alt="Интернет-магазин 'Традиция климата'" width="277" height="78">
 
       <div class="header__contacts">
-        <a class="header__tel" href="tel:+74992167034">+7 (499) 216-70-34</a>
+        <div class="header__group">
+          <a href="" class="header__whatsup">
+            <img src="img/icons/whatsup.svg" alt="" width="48" height="48">
+          </a>
+
+          <a href="" class="header__tg">
+            <img src="img/icons/telegram.svg" alt="" width="49" height="48">
+          </a>
+          <a class="header__tel" href="tel:+74992167034">+7 (499) 216-70-34</a>
+        </div>
+
         <button class="header__btn-call blue-color button link-hover" data-bs-toggle="modal" data-bs-target="#contactCall">Заказать
           обратный звонок
         </button>
@@ -91,7 +101,8 @@
   <section class="promo">
     <div class="h-container promo__container">
       <div class="promo__content">
-        <p class="promo__text">Доставка и установка
+        <p class="promo__text">Скидка <span>50%</span> на монтаж <br>
+          и доставка <br>
           <span>в подарок!</span></p>
       </div>
     </div>
@@ -741,20 +752,60 @@
       <div class="about-us__content">
         <h3 class="about-us__title title">Как мы работаем?</h3>
         <ul class="list about-us__list">
-          <li class="about-us__item about-us__item_1">Оставьте заявку или свяжитесь с нами</li>
-          <li class="about-us__item about-us__item_2">Наш специалист проконсультирует вас</li>
-          <li class="about-us__item about-us__item_3">Выезд замерщика к вам, какие-то работы</li>
-          <li class="about-us__item about-us__item_4">Монтаж оборудования, какие-то работы и всё</li>
-          <li class="about-us__item about-us__item_5">Оплата после проверки монтажа</li>
+          <li class="about-us__item about-us__item_1">
+            <img src="/img/icons/inspection.png"
+                 width="112"
+                 height="112"
+                 alt="Оставьте заявку или свяжитесь с нами">
+            <span class="about-us__item-text">
+              Оставьте заявку или свяжитесь с нами
+            </span>
+          </li>
+          <li class="about-us__item about-us__item_2">
+            <img src="/img/icons/checklist.png"
+                 width="112"
+                 height="112"
+                 alt="Наш специалист проконсультирует вас">
+            <span class="about-us__item-text">
+              Наш специалист проконсультирует вас
+            </span>
+          </li>
+          <li class="about-us__item about-us__item_3">
+            <img src="/img/icons/design.png"
+                 width="112"
+                 height="112"
+                 alt="Выезд замерщика к вам, какие-то работы">
+            <span class="about-us__item-text">
+              Выезд замерщика к вам, какие-то работы
+            </span>
+          </li>
+          <li class="about-us__item about-us__item_4">
+            <img src="/img/icons/gear.png"
+                 width="112"
+                 height="112"
+                 alt="Монтаж оборудования, какие-то работы и всё">
+            <span class="about-us__item-text">
+              Монтаж оборудования, какие-то работы и всё
+            </span>
+          </li>
+          <li class="about-us__item about-us__item_5">
+            <img src="/img/icons/income.png"
+                 width="112"
+                 height="112"
+                 alt="Оплата после проверки монтажа">
+            <span class="about-us__item-text">
+              Оплата после проверки монтажа
+            </span>
+          </li>
           <li class="about-us__item about-us__item_mod">
-            <a href="" class="about-us__link">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="button about-us__link">
               <svg width="54" height="44" viewBox="0 0 54 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M29.9238 0.836629C28.9947 1.786 28.9947 3.31985 29.9301 4.26276L40.5479 14.9932L40.793 15.21C41.7307 15.9323 43.0689 15.857 43.9206 14.9868C44.3851 14.5121 44.6174 13.8953 44.6174 13.2785C44.6174 12.6553 44.3851 12.0353 43.9142 11.5606L33.2997 0.83017L33.0545 0.614152C32.1164 -0.105655 30.7754 -0.0306673 29.9238 0.836629ZM2.83716 19.5965C1.66094 19.7461 0.75 20.7655 0.75 21.9995C0.75 23.3364 1.81909 24.4214 3.13636 24.4214H45.0855L29.9305 39.7372L29.7161 39.9846C29.0015 40.9317 29.0724 42.2931 29.9241 43.1634C30.8532 44.1095 32.3645 44.1127 33.2968 43.1698L52.5468 23.7142L52.7591 23.4706C53.0821 23.0445 53.25 22.5243 53.25 21.9995C53.25 21.6863 53.1895 21.3731 53.0686 21.076C52.6995 20.1686 51.8309 19.5777 50.8636 19.5777H3.13636L2.83716 19.5965Z"
                       fill="#2F80ED"/>
               </svg>
               Оставить заявку
-            </a>
+            </button>
           </li>
         </ul>
       </div>
@@ -893,9 +944,8 @@
             </p>
 
           </div>
-          <p class="reviews__features">Основные наши преимущества — это оплата после установки,
-            высококвалифицированные исполнители и гарантия на оборудование. Мы гарантируем индивидуальный подход к
-            каждому клиенту и мгновенное реагирование на ваше обращение.
+          <p class="reviews__features">За время работы наша компания завоевала репутацию профессионального исполнителя,
+            а также надёжного партнёра. Подтверждением этому служат положительные отзывы наших уважаемых Заказчиков. Обратившись к нам, Вы можете быть уверены, что все необходимые работы будут выполнены нами в сжатые сроки и с высоким качеством.
           </p>
         </div>
 
@@ -944,7 +994,7 @@
                 </ul>
 
                 <span class="reviews-card__date">
-                17 декабря 2021
+                04 мая 2022
               </span>
               </div>
               <p class="reviews-card__content">
@@ -1302,11 +1352,10 @@
         </div>
 
         <p class="partners__text">
-          Основные наши преимущества — это оплата после установки, высококвалифицированные исполнители и гарантия на
-          оборудование.
+          Мы предлагаем Вашему вниманию широкий ассортимент кондиционеров различных производителей. Предоставляем полную официальную гарантию производителя на любую модель.
         </p>
         <p class="partners__text">
-          Мы гарантируем индивидуальный подход к каждому клиенту и мгновенное реагирование на ваше обращение.
+          Бренды, представленные в каталоге, имеют авторизованные сервисные центры  по всей России. Все кондиционеры сертифицированы.
         </p>
 
         <div class="partners__slider">
@@ -1646,10 +1695,10 @@
      tabindex="-1"
      aria-labelledby="contactModalLabel"
      aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content modal-contact__content">
       <div class="modal-header modal-contact__header">
-        <button type="button" class="btn-close close modal-contact__close" data-bs-dismiss="modal"
+        <button type="button" class="btn-close close modal-contact__close modal-contact__close_desktop" data-bs-dismiss="modal"
                 aria-label="Закрыть"></button>
       </div>
       <div class="modal-body modal-contact__body">
@@ -1669,6 +1718,9 @@
           </div>
 
           <button type="submit" class="form-action__button button">Отправить</button>
+
+          <button type="button" class="btn-close close modal-contact__close modal-contact__close_mobile" data-bs-dismiss="modal"
+                  aria-label="Закрыть">Закрыть</button>
         </form>
       </div>
     </div>
@@ -1683,7 +1735,7 @@
      tabindex="-1"
      aria-labelledby="contactModalLabel"
      aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content modal-contact__content">
       <div class="modal-header modal-contact__header">
         <button type="button" class="btn-close close modal-contact__close" data-bs-dismiss="modal"

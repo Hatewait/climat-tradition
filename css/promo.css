@@ -3,7 +3,7 @@
   margin-bottom: 60px;
   background: no-repeat url(../img/car.png);
   min-height: 650px;
-  background-position: 6px -102px;
+  background-position: 77px -102px;
 }
 
 .promo__text {
@@ -17,7 +17,7 @@
 }
 
 .promo__text span {
-  color: #EB5757;
+  color: #FA2727;
 }
 
 @media (max-width: 1279px) {
@@ -35,10 +35,10 @@
   .promo__content  {
     padding-top: 20px;
     margin-bottom: 30px;
-    background: no-repeat -50px/130% url("../img/car.png");
+    background: no-repeat -50px/73% url("../img/car.png");
     min-height: 285px;
-    background-position-x: -93px;
-    background-position-y: 41px;
+    background-position-x: 19px;
+    background-position-y: 2px;
   }
 
   .promo__text {
@@ -49,5 +49,21 @@
 
   .promo__text span {
     color: #2F80ED;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo__content {
+    background: no-repeat -50px/105% url("../img/car.png");
+    background-position-x: -60px;
+    background-position-y: 22px;
+  }
+}
+
+@media (max-width: 430px) {
+  .promo__content {
+    background: no-repeat -50px/115% url("../img/car.png");
+    background-position-x: -59px;
+    background-position-y: 72px;
   }
 }

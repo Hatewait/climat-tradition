@@ -251,7 +251,7 @@
   }
 
   .intro-product__details .card-price__current {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .intro-product__details .trigger-form-btn {
@@ -281,5 +281,14 @@
 
   .intro-product__nav-list-wrap {
     flex-direction: column;
+  }
+
+  .intro-product__pic img {
+    max-width: 100%;
+  }
+
+  .intro-product .trigger-form-btn {
+    width: 100%;
+    max-width: 100%;
   }
 }

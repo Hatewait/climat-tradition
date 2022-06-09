@@ -96,7 +96,7 @@
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 40px;
-  border: 2px solid #f6f6f6;
+  background: #f6f6f6;
 }
 
 .reviews__show-more {
@@ -112,6 +112,11 @@
   color: #000000;
 
   z-index: 10;
+  background: #ffffff;
+}
+
+.reviews-card.reviews-card_show-more {
+  background: #ffffff;
 }
 
 .reviews__show-more svg {
@@ -135,6 +140,7 @@
 .reviews-card__group {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .reviews-card__date {

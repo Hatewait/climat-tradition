@@ -18,13 +18,27 @@
   justify-content: space-between;
 }
 
+.header__group {
+  display: flex;
+  align-items: center;
+}
+
+.header__whatsup img {
+  width: 30px;
+  margin-right: 15px;
+}
+
+.header__tg img {
+  width: 30px;
+  margin-right: 15px;
+}
+
 .header__contacts {
   display: flex;
   flex-direction: column;
 }
 
 .header__tel {
-  margin-bottom: 6px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -35,6 +49,7 @@
 }
 
 .header__btn-call {
+  margin-top: 6px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;

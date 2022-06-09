@@ -160,7 +160,7 @@
   max-width: 100%;
 }
 
-.about-body__col-group a {
+.about-body__col-group span {
   max-width: fit-content;
   font-family: 'Montserrat';
   font-style: normal;

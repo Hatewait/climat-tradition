@@ -25,6 +25,11 @@
   color: #000000;
 }
 
+.modal-contact.fade {
+  background: rgba(246, 246, 246, 0.8);
+  backdrop-filter: blur(6px);
+}
+
 .modal-contact_call .modal-contact__title {
   margin-bottom: 20px;
 }
@@ -47,6 +52,10 @@
 
 .modal-body.modal-contact__body {
   padding: 80px 110px;
+}
+
+.modal-contact .modal-dialog {
+  max-width: 620px;
 }
 
 .form-action {
@@ -141,6 +150,10 @@
   transform: rotate(-45deg);
 }
 
+.modal-contact__close_mobile {
+  display: none;
+}
+
 @media (max-width: 810px) {
   .modal-body.modal-contact__body {
     padding: 60px 40px;
@@ -161,7 +174,7 @@
     margin-bottom: 20px;
   }
 
-  .modal-header .btn-close.close {
+  /*.modal-header .btn-close.close {
     width: 50px;
     height: 50px;
   }
@@ -174,5 +187,38 @@
   .modal-header  .btn-close.close::after {
     right: 22px;
     top: 14px;
+  }*/
+
+  .modal-contact__close_desktop {
+    display: none;
+  }
+
+  .modal-contact__close_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    background: transparent;
+    margin-top: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* Text/Blue */
+
+    color: #2F80ED;
+    opacity: 1;
+    text-align: center;
+    width: 100%;
+  }
+
+  .modal-contact__close_mobile::before {
+    display: none;
+  }
+
+  .modal-contact__close_mobile::after {
+    display: none;
   }
 }

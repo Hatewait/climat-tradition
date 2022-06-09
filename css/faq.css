@@ -28,6 +28,10 @@
 }
 
 @media (max-width: 810px) {
+  .faq {
+    margin-bottom: 60px;
+  }
+
   .faq__block {
     margin-bottom: 40px;
     max-width: 100%;
