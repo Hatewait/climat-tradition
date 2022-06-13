@@ -12,6 +12,8 @@
 }
 
 .contacts__group {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 60px;
 }
 
@@ -34,6 +36,10 @@
   line-height: 29px;
 
   color: #000000;
+}
+
+a.contacts__content {
+  width: max-content;
 }
 
 
