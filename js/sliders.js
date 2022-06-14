@@ -20,6 +20,8 @@ const mySwiper = new Swiper(".services__swiper", {
 
 
 const partnersSwiper = new Swiper(".partners__slider", {
+  direction: 'horizontal',
+  watchOverflow: true,
   slidesPerView: 4,
   loop: true,
   spaceBetween: 40,
@@ -38,20 +40,21 @@ const partnersSwiper = new Swiper(".partners__slider", {
       slidesPerView: 1,
       spaceBetween: 20,
       centeredSlides: false,
+      autoHeight: true
     },
     // when window width is >= 480px
     600: {
       slidesPerView: 2,
       spaceBetween: 40,
       centeredSlides: false,
-      autoHeight: true,
+      autoHeight: false,
     },
 
     880: {
       slidesPerView: 3,
       spaceBetween: 40,
       centeredSlides: false,
-      autoHeight: true,
+     // autoHeight: true,
     },
 
     // when window width is >= 640px
@@ -59,14 +62,14 @@ const partnersSwiper = new Swiper(".partners__slider", {
       slidesPerView: 3,
       spaceBetween: 40,
       centeredSlides: false,
-      autoHeight: true,
+     // autoHeight: true,
     },
 
     1280: {
       slidesPerView: 4,
       spaceBetween: 40,
       centeredSlides: false,
-      autoHeight: true,
+      //autoHeight: true,
     }
   }
 
@@ -190,3 +193,4 @@ $(document).ready(function()  {
     });
   }
 });
+
